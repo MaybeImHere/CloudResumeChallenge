@@ -1,0 +1,103 @@
+<html>
+<head>
+<style>
+
+body {
+  background-color: #222;
+}
+
+h1, h2, p {
+  font-family: sans-serif;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.visitor-counter-text {
+  font-family: monospace;
+}
+
+#page-look-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page-look-width {
+  width: 50.0em;
+  background-color: #DDC;
+  padding: 1em;
+}
+
+#title-card {
+  border-bottom: 3px solid black;
+}
+
+#title-card-name {
+  margin: 0em;
+}
+
+.group-name {
+  font-weight: bold;
+  display: inline-block;
+  text-decoration:underline;
+  text-decoration-thickness:2px;
+  margin-bottom: 0px;
+}
+
+.group-list {
+  margin-top: 0px;
+}
+
+</style>
+</head>
+
+<body>
+  <div id="page-look-main">
+    <div id="page-look-width">
+      <div id="title-card">
+        <h1 id="title-card-name">Daniel Kaeseberg</h1>
+      </div>
+
+      <div class="group">
+        <h2 class="group-name">Education</h2>
+        <ul class="group-list">
+          <li>Associates in Engineering from Harper College, GPA 3.5 (Spring 2024)</li>
+          <li>Bachelors in Computer Science, Software Engineering Concentration (Anticipated Fall 2028)</li>
+        </ul>
+      </div>
+      
+      <div class="group">
+        <h2 class="group-name">Experience</h2>
+        <ul class="group-list">
+          <li>The very resume you are reading! This resume required knowledge of HTML/CSS for the look of the website, along with Javascript, database operations, and Azure for the visitor counter.</li>
+          <li>Wrote a transpiler for a custom language to C as a hobby project. This was written in C.</li>
+          <li>Created a electrostatic/gravitational particle simulator also as a hobby project. This was written in C#.</li>
+        </ul>
+      </div>
+      
+      <div class="group">
+        <h2 class="group-name">Honors/Certifications</h2>
+        <ul class="group-list">
+          <li>Networking+</li>
+          <li>Security+</li>
+        </ul>
+      </div>
+      
+      <div class="group">
+        <h2 class="group-name">Other Experiences/Interests</h2>
+        <ul class="group-list">
+          <li>Extensive customer service experience along with ability to independently prioritize work without the direct help of management at a grocery store.</li>
+          <li>Practiced karate for 10 years.</li>
+          <li>Enjoy reading up on latest programming/security related news.</li>
+        </ul>
+      </div>
+      
+      <p class="visitor-counter-text">Visitors: <span id="visitor-counter">Loading...</span></p>
+    </div>
+  </div>
+</body>
+
+</html>
