@@ -96,17 +96,17 @@ h2 {
       </div>
       
       <p class="visitor-counter-text">Visitors: <span id="visitor-counter">Loading...</span></p>
-			<script>
-  		fetch("/api/visitCounter", { cache: "no-store" })
-    		.then(r => r.json())
-    		.then(data => {
-      		document.getElementById("visitor-count").textContent = data.count;
-    		})
-    		.catch(err => {
-      		console.error("Error fetching visitor count", err);
-      		document.getElementById("visitor-count").textContent = "—";
-    		});
-			</script>
+  <script>
+      fetch("/api/visitorCounter", { cache: "no-store" })
+        .then(r => r.json())
+        .then(data => {
+          document.getElementById("visitor-counter").textContent = data.count;
+        })
+        .catch(err => {
+          console.error("Error fetching visitor count", err);
+          document.getElementById("visitor-counter").textContent = "—";
+        });
+      </script>
     </div>
   </div>
 </body>
